@@ -1,0 +1,41 @@
+.scroll-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 13%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    button {
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      border: none;
+    //   border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+     
+  
+      .icon {
+        color: var(--accent);
+        font-size: 40px;
+        animation: bounce 1s infinite alternate; 
+        
+       
+  
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }

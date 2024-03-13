@@ -1,0 +1,176 @@
+.gallery-parent {
+    height: auto;
+    padding: 50px 0px;
+    background-color: var(--grey);
+
+    .gallery-container {
+
+        .election-section {
+            margin-top: 60px;
+            // padding: 20px;
+            width: 100%;
+
+            .gallery-span {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .gallery-line {
+                margin: 20px 0px;
+                height: 1px;
+                width: 100%;
+                border: 1px solid rgba(199, 197, 197, 0.521);
+            }
+
+            .s-container {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .swiper {
+                    // padding: 50px;
+                }
+
+                .swiper-slide {
+                    border-radius: 10px;
+
+                    &.swiper-img1 {
+                        background-image: url('https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?w=1380&t=st=1707740787~exp=1707741387~hmac=99672219b768c0acf842c9ae189d369a4c37204bfba53ee29b7827a604585820');
+                    }
+
+                    &.swiper-img2 {
+                        background-image: url('https://img.freepik.com/free-photo/young-woman-hiker-taking-photo-with-smartphone-mountains-peak-winter_335224-427.jpg?size=626&ext=jpg&ga=GA1.1.1422895206.1705141923&semt=sph');
+                    }
+
+                    &.swiper-img3 {
+                        background-image: url('https://img.freepik.com/free-photo/people-portrait-with-plane-flying-sky_23-2149520423.jpg?size=626&ext=jpg&ga=GA1.1.1422895206.1705141923&semt=sph');
+                    }
+
+                    &.swiper-img4 {
+                        background-image: url('https://img.freepik.com/free-photo/full-shot-couple-with-cute-dog_23-2149094675.jpg?size=626&ext=jpg&uid=R35125704&ga=GA1.1.1422895206.1705141923&semt=sph');
+                    }
+
+                    &.swiper-img5 {
+                        background-image: url('https://img.freepik.com/free-photo/young-female-traveler-enjoying-rural-surroundings_23-2149125532.jpg?size=626&ext=jpg&uid=R35125704&ga=GA1.1.1422895206.1705141923&semt=sph');
+                    }
+                }
+
+                .swiper {
+                    width: 100%;
+                    height: 400px;
+                    // margin: 20px auto;
+                }
+            }
+
+        }
+
+
+        //marketing section
+
+        .marketing-section {
+            background-color: var(--white);
+
+            .gallery-span {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .gallery-line {
+                margin: 20px 0px;
+                height: 1px;
+                width: 100%;
+                border: 1px solid rgba(199, 197, 197, 0.521);
+            }
+
+            // .swiper {
+            //     padding: 50px;
+            // }
+
+            .swiper-slide {
+                border-radius: 10px;
+
+                &.swiper-img1 {
+                    background-image: url('https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?w=1380&t=st=1707740787~exp=1707741387~hmac=99672219b768c0acf842c9ae189d369a4c37204bfba53ee29b7827a604585820');
+                }
+
+                &.swiper-img2 {
+                    background-image: url('https://img.freepik.com/free-photo/young-woman-hiker-taking-photo-with-smartphone-mountains-peak-winter_335224-427.jpg?size=626&ext=jpg&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+
+                &.swiper-img3 {
+                    background-image: url('https://img.freepik.com/free-photo/people-portrait-with-plane-flying-sky_23-2149520423.jpg?size=626&ext=jpg&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+
+                &.swiper-img4 {
+                    background-image: url('https://img.freepik.com/free-photo/full-shot-couple-with-cute-dog_23-2149094675.jpg?size=626&ext=jpg&uid=R35125704&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+
+                &.swiper-img5 {
+                    background-image: url('https://img.freepik.com/free-photo/young-female-traveler-enjoying-rural-surroundings_23-2149125532.jpg?size=626&ext=jpg&uid=R35125704&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+            }
+
+            .swiper {
+                width: 100%;
+                height: 400px;
+                // margin: 20px auto;
+            }
+        }
+
+
+        //calender section
+
+        .calender-section {
+            background-color: var(--grey);
+
+            .gallery-span {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .gallery-line {
+                margin: 20px 0px;
+                height: 1px;
+                width: 100%;
+                border: 1px solid rgba(199, 197, 197, 0.521);
+            }
+
+            // .swiper {
+            //     padding: 50px;
+            // }
+
+            .swiper-slide {
+                border-radius: 10px;
+
+                &.swiper-img1 {
+                    background-image: url('https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?w=1380&t=st=1707740787~exp=1707741387~hmac=99672219b768c0acf842c9ae189d369a4c37204bfba53ee29b7827a604585820');
+                }
+
+                &.swiper-img2 {
+                    background-image: url('https://img.freepik.com/free-photo/young-woman-hiker-taking-photo-with-smartphone-mountains-peak-winter_335224-427.jpg?size=626&ext=jpg&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+
+                &.swiper-img3 {
+                    background-image: url('https://img.freepik.com/free-photo/people-portrait-with-plane-flying-sky_23-2149520423.jpg?size=626&ext=jpg&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+
+                &.swiper-img4 {
+                    background-image: url('https://img.freepik.com/free-photo/full-shot-couple-with-cute-dog_23-2149094675.jpg?size=626&ext=jpg&uid=R35125704&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+
+                &.swiper-img5 {
+                    background-image: url('https://img.freepik.com/free-photo/young-female-traveler-enjoying-rural-surroundings_23-2149125532.jpg?size=626&ext=jpg&uid=R35125704&ga=GA1.1.1422895206.1705141923&semt=sph');
+                }
+            }
+
+            .swiper {
+                width: 100%;
+                height: 400px;
+                // margin: 20px auto;
+            }
+        }
+
+
+    }
+}

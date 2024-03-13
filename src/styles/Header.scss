@@ -1,0 +1,170 @@
+.header {
+  height: 60px;
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  background: var(--white);
+
+  .header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      img {
+        height: 80%;
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--gap);
+
+      a:not(.btn) {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--text);
+
+        &:hover {
+        }
+      }
+
+     
+
+
+      .ant-dropdown-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--text);
+        font-weight: 500;
+        
+        .header-arrow{
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            font-size: 30px;
+            
+
+          }
+        }
+
+      }
+
+      
+    }
+    .menu {
+      // display: none;
+      height: 50px;
+      aspect-ratio: 1;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+    }
+  }
+}
+
+.dropdown{
+  margin-top:15px !important;
+}
+
+
+
+
+
+// mobile nav starts here
+
+.mob-nav {
+  background: var(--white);
+  z-index: 10;
+  height: 100vh;
+  width: 0vw;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: var(--trans);
+  padding-top: 100px;
+
+
+  &.navopen{
+    width: 100vw;
+    right: 0px;
+    .close{
+        font-size: 40px;
+        display: flex !important;
+    }
+    .moblinks{
+        a{
+            font-size: 24px !important;
+        }
+    }
+    
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    aspect-ratio: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+    transition: var(--trans);
+  }
+
+  .moblinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--gap) * 2);
+
+
+    a:not(.btn){
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0px;
+        color: var(--text);
+  }
+
+  .arrow-mob{
+    display: flex;
+    align-items: center;
+  }
+
+  
+
+
+
+  
+}}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: flex !important;
+  }
+  .links {
+    display: none !important;
+  }
+
+  .mob-nav {
+    // display: none !important;
+  }
+}

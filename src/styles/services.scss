@@ -1,0 +1,316 @@
+.service1-parent {
+  padding: 50px 0px;
+  background: var(--grey);
+  height: 100%;
+  .service1-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--gap);
+    .service1-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 50%;
+      padding: 0px 10px;
+      P {
+        color: var(--text);
+      }
+    }
+    .service1-right {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .service1-parent {
+    .service1-container {
+      display: flex;
+      flex-direction: column;
+      .service1-left {
+        width: 100% !important;
+      }
+      .service1-right {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+//   ---------------Campaign swiper css--------------------
+.service-list-two{
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+
+  .service-list1{
+    width: 30%;
+
+  }
+
+  .service-list1{
+    width: 70%;
+
+  }
+}
+@media only screen and (max-width:500px){
+  .service-list-two{
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 30px !important;
+  
+  
+    .service-list1{
+      width: 100% !important;
+  
+    }
+  
+    .service-list1{
+      width: 100% !important;
+  
+    }
+  }
+
+}
+
+
+
+.camp-parent {
+  background-color: var(--grey);
+
+  .camp-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: var(--gap);
+
+    .camp-left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 20px;
+
+      .camp-top {
+        background-image: url("../Img//election-campaign/No-More-Blaming-The-Tools.webp");
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        background-color: var(--white);
+        box-shadow: var(--box-shadow);
+      }
+
+      .camp-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+
+        .line-text {
+          display: flex;
+          gap: var(--gap);
+          align-items: center;
+
+          .line {
+            height: 1px;
+            width: 30px;
+            border: 1px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .span-text {
+            color: var(--accent);
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .camp-right {
+      width: 50%;
+      height: 100%;
+
+      .swiper-card1 {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        gap: var(--gap);
+        width: 100%;
+        height: 100%;
+
+        .card-img1 {
+          background-image: url("../Img/election-campaign/WAR-ROOM.webp");
+          width: 220px;
+          height: 250px;
+          border-radius: 10px;
+          background-color: var(--white);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          
+        }
+        .cimg2{
+          background-image: url("../Img/election-campaign/Call-Centre.webp");
+
+        }
+        .cimg3{
+          background-image: url("../Img/election-campaign/voice-call-campaign.jpg");
+
+        }
+        .cimg4{
+          background-image: url("../Img/election-campaign/scheduling-campaign.jpg");
+
+        }
+        .cimg5{
+          background-image: url("../Img/election-campaign/LED-VAN.webp");
+
+        }
+        .cimg6{
+          background-image: url("../Img/election-campaign/audio-rickshaw-with-speakers.jpg");
+
+        }
+        .cimg7{
+          background-image: url("../Img/election-campaign/bicycle-advertisement.jpg");
+
+        }
+        .cimg8{
+          background-image: url("../Img/election-campaign/Street-Shows.webp");
+
+        }
+        .cimg9{
+          background-image: url("../Img/election-campaign/Loka-Kala.webp");
+
+        }
+
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: fit-content;
+          padding: 0px 10px;
+
+          .card-h4 {
+            color: black;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+          }
+        }
+      }
+
+      .swiper {
+        width: 240px;
+        height: 320px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .camp-container {
+    flex-direction: column-reverse !important;
+    display: flex;
+
+    .camp-left {
+      width: 100% !important;
+    }
+    .camp-bottom {
+      .line-text {
+        justify-content: center !important;
+      }
+    }
+  }
+}
+
+// ---------------------------Swiper card----------------------------------------
+.s-fact-parent {
+  padding: 50px 0px;
+  .swiper-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 30px 0px;
+    align-items: center;
+    gap: 10px;
+    .line-text {
+      color: var(--accent);
+      font-weight: 400;
+      .line {
+        height: 2px;
+        width: 100%;
+        background: var(--accent);
+      }
+    }
+    .card-title {
+      //   font-size: 30px;
+      text-align: center;
+    }
+  }
+  .s-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .swiper-pagination-bullet{
+        background:var(--white);
+        width:20px;
+        height:20px;
+      }
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: var(--grey);
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      align-items: center;
+      &.slidess {
+        background: url("../Img/election-campaign/Poll-Chits.webp");
+      }
+      &.slidess1 {
+        background: url("../Img/election-campaign/Promotional-Materials.webp");
+      }
+      &.slidess2 {
+        background: url("../Img//election-campaign/Audio-j.webp");
+      }
+      &.slidess3 {
+        background: url("../Img/election-campaign/Video-d.webp");
+      }
+      &.slidess4 {
+        background: url("../Img//election-campaign/Banners-Flex-Hoardings.webp");
+      }
+      &.slidess5 {
+        background: url("../Img//election-campaign/Banners-Flex-HoardingsS.webp");
+      }
+    }
+  }
+}

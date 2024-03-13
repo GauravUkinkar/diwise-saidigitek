@@ -1,0 +1,151 @@
+.card-parent {
+  padding:50px 0px;
+
+  .card-container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+    .card-content-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      
+      .card-short-title {
+        color: var(--accent);
+        font-weight: 400;
+        .line{
+            height:2px;
+            background: var(--accent);
+            width:100%;
+        }
+      }
+      .card-title {
+        text-align: center;
+        font-size: 30px;
+      }
+      .card-description {
+        width: 80%;
+        text-align: center;
+        color: var(--text);
+      }
+    }
+    .card-box {
+      padding: 40px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+
+
+        .swiper-button-next{
+          color: var(--accent) !important;
+          font-size: 10px !important;
+    
+        }
+        
+        .swiper-button-prev{
+          color: var(--accent)!important;
+          font-size: 10px !important;
+    
+        }
+        .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+          font-size: 25px;
+        }
+
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+          font-size: 25px;
+        }
+
+        .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+          background: var(--accent);
+          
+        }
+
+        
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    
+      
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      //   gap: 30px;
+      
+      .card {
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 350px;
+        background-color: white;
+        padding:  10px;
+        box-shadow: var(--box-shadow);
+        border-radius: 10px;
+        .content-box{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 20px;
+
+        
+        .img {
+          width: 100%;
+          height: 250px;
+          border-radius: 10px;
+        }
+      }
+       
+
+      }
+    }
+  //   @media screen and (max-width: 1200px) {
+  //     .content-box{
+  //       display: flex !important;
+  //       flex-direction: column !important;
+  //       align-items: center !important;
+  //       justify-content: center !important;
+  //       gap: 10px !important;
+  //     }
+  //     .button{
+  //       display: flex !important;
+  //       align-items: center !important;
+  //     }
+  //   }
+
+  //   @media only screen and (max-width: 1000px) {
+  //     .bottom-card {
+  //       display: flex !important;
+  //       align-items: flex-start !important;
+      
+  //     }
+  //   }
+
+  //   @media only screen and (max-width: 800px) {
+  //     .bottom-card {
+  //       display: flex !important;
+  //       align-items: flex-start !important;
+      
+  //     }
+  //   }
+  // }
+
+  
+  }
+}

@@ -1,0 +1,117 @@
+.fact-parent {
+    padding: 50px 0px;
+
+    .fact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap);
+        margin-bottom: 80px;
+        
+
+        .fact {
+            display: flex;
+            flex-direction: column;
+            
+
+
+            .fact-span {
+                color: var(--accent);
+                font-size: 18px;
+                font-weight: 400;
+                
+            }
+
+            .underline {
+                height: 2px;
+                width: 100%;
+                border: 1px solid var(--accent);
+            }
+        }
+
+        .fact-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 0.7px;
+            word-spacing: 1px;
+            text-align: center;
+        }
+
+        .box-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            // gap: var(--gap);
+            padding: 10px;
+            
+            
+
+            .box {
+               width: 300px !important;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               padding: 20px;
+               background: var(--grey);
+               border-radius: var(--rad);
+
+               .brand{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: calc(var(--gap)/2);
+                border-radius: 1000px;
+                background: var(--white);
+                padding: 10px 20px;
+                margin-top: 20px;
+                
+                .face-icon1{
+                    font-size: 30px;
+                    color: #316FF6;
+                }
+                .face-icon2{
+                    font-size: 30px;
+                    color: #d62976 ;
+                }
+                .face-icon3{
+                    font-size: 30px;
+                    color: #1DA1F2;
+                }
+                .face-icon4{
+                    font-size: 30px;
+                    color: #0A66C2;
+                }
+                .face-icon5{
+                    font-size: 30px;
+                    color: #ff0000;
+                }
+                
+                .social-media-text{
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color:rgba(0, 0, 0, 0.3);
+                }
+               }
+
+
+                .face-span{
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: var(--accent);
+                }
+
+            }
+
+       
+        }
+    }
+}
+
