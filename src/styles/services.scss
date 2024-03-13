@@ -24,6 +24,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .service1-parent {
     .service1-container {
@@ -137,6 +138,7 @@
     .camp-right {
       width: 50%;
       height: 100%;
+      align-items: center;
 
       .swiper-card1 {
         background-color: var(--white);
@@ -150,8 +152,7 @@
 
         .card-img1 {
           background-image: url("../Img/election-campaign/WAR-ROOM.webp");
-          width: 220px;
-          height: 250px;
+          height: 450px;
           border-radius: 10px;
           background-color: var(--white);
           display: flex;
@@ -192,6 +193,9 @@
           background-image: url("../Img/election-campaign/Loka-Kala.webp");
 
         }
+        @media only screen and (max-width:500px){
+          height:350px !important;
+        }
 
         .card-content {
           display: flex;
@@ -215,12 +219,18 @@
       }
 
       .swiper {
-        width: 240px;
-        height: 320px;
+        width: 80%;
+        height: 500px;
+      }
+      @media only screen and (max-width:500px){
+        .swiper{
+          height:400px !important;
+        }
       }
 
       .swiper-slide {
         display: flex;
+       
         align-items: center;
         justify-content: center;
         border-radius: 10px;
@@ -236,6 +246,11 @@
 
     .camp-left {
       width: 100% !important;
+    }
+    .camp-right{
+      width: 100%!important;
+      align-items: center;
+      justify-content: center;
     }
     .camp-bottom {
       .line-text {
@@ -279,7 +294,8 @@
       width: 100%;
       height: 100%;
       .swiper-pagination-bullet{
-        background:var(--white);
+        background:var(--accent);
+        border: 1px solid var(--white);
         width:20px;
         height:20px;
       }
@@ -287,6 +303,7 @@
 
     .swiper-slide {
       text-align: center;
+      margin-bottom: 30px;
       font-size: 18px;
       background: var(--grey);
       display: flex;
@@ -308,9 +325,9 @@
       &.slidess4 {
         background: url("../Img//election-campaign/Banners-Flex-Hoardings.webp");
       }
-      &.slidess5 {
-        background: url("../Img//election-campaign/Banners-Flex-HoardingsS.webp");
-      }
+      // &.slidess5 {
+      //   background: url("../Img//election-campaign/Banners-Flex-HoardingsS.webp");
+      // }
     }
   }
 }
