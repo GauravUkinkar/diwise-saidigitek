@@ -230,7 +230,7 @@ function Services(props) {
             <SwiperSlide className="slidess2 bg-img-cover"></SwiperSlide>
             <SwiperSlide className="slidess3 bg-img-cover"></SwiperSlide>
             <SwiperSlide className="slidess4 bg-img-cover"></SwiperSlide>
-            <SwiperSlide className="slidess5 bg-img-cover"></SwiperSlide>
+            {/* <SwiperSlide className="slidess5 bg-img-cover"></SwiperSlide> */}
           </Swiper>
         </div>
       </div>

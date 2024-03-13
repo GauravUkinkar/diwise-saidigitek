@@ -30,10 +30,17 @@
 
                 .swiper {
                     // padding: 50px;
+                    .swiper-pagination-bullet{
+                        background:var(--accent);
+                        border: 1px solid var(--white);
+                        width:20px;
+                        height:20px;
+                      }
                 }
 
                 .swiper-slide {
                     border-radius: 10px;
+                    margin-bottom:30px;
 
                     &.swiper-img11 {
                         background-image: url('../Img/gallery/s11.jpeg');
@@ -60,6 +67,12 @@
                     width: 100%;
                     height: 400px;
                     // margin: 20px auto;
+                    .swiper-pagination-bullet{
+                        background:var(--accent);
+                        border: 1px solid var(--white);
+                        width:20px;
+                        height:20px;
+                      }
                 }
             }
 
@@ -89,6 +102,7 @@
 
             .swiper-slide {
                 border-radius: 10px;
+                margin-bottom:30px;
 
                 &.swiper-img21 {
                     background-image: url('../Img/marketing/s21.jpeg');
@@ -115,6 +129,12 @@
                 width: 100%;
                 height: 400px;
                 // margin: 20px auto;
+                .swiper-pagination-bullet{
+                    background:var(--accent);
+                    border: 1px solid var(--white);
+                    width:20px;
+                    height:20px;
+                  }
             }
         }
 
@@ -142,6 +162,7 @@
 
             .swiper-slide {
                 border-radius: 10px;
+                margin-bottom:30px;
 
                 &.swiper-img31 {
                     background-image: url('../Img/calender/s31.jpg');
@@ -167,7 +188,14 @@
             .swiper {
                 width: 100%;
                 height: 400px;
+                margin-bottom:30px;
                 // margin: 20px auto;
+                .swiper-pagination-bullet{
+                    background:var(--accent);
+                    border: 1px solid var(--white);
+                    width:20px;
+                    height:20px;
+                  }
             }
         }
 
