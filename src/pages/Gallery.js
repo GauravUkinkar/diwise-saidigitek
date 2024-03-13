@@ -30,7 +30,7 @@ function Gallery(props) {
 
                       }}
                       autoplay={{
-                        delay: 123452500,
+                        delay: 2500,
                         disableOnInteraction: false,
                       }}
 
