@@ -9,6 +9,14 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import "../styles/accordian.scss"
 
 function Header(props) {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   const [navopen, setNavOpen] = useState(false);
 
   const [accordian ,setaccordian]=useState(false)
@@ -26,13 +34,13 @@ function Header(props) {
     
     <Menu className="dropdown" onClick={handleMenuClick}>
       <Menu.Item key="1">
-        <Link to="/data_support">{data.Header_data}</Link>
+        <Link  onClick={scrollToTop} to="/data_support">{data.Header_data}</Link>
       </Menu.Item>
       <Menu.Item key="2">
-        <Link to="/social_media_support">{data. Header_social_media}</Link>
+        <Link  onClick={scrollToTop} to="/social_media_support">{data. Header_social_media}</Link>
       </Menu.Item>
       <Menu.Item key="3">
-        <Link to="/election_campaign_support">{data. Header_election_campaign}</Link>
+        <Link  onClick={scrollToTop} to="/election_campaign_support">{data. Header_election_campaign}</Link>
       </Menu.Item>
     </Menu>
 
@@ -51,20 +59,20 @@ function Header(props) {
     <>
       <div className="parent header">
         <div className="header-cont cont">
-          <Link to="/" className="logo">
+          <Link  onClick={scrollToTop} to="/" className="logo">
             <img src={logo} alt="logo" />
           </Link>
 
           <div className="links">
-            <Link to="/">{data.Header_home}</Link>
-            <Link to="/about">{data.Header_about}</Link>
+            <Link  onClick={scrollToTop} to="/">{data.Header_home}</Link>
+            <Link  onClick={scrollToTop} to="/about">{data.Header_about}</Link>
             <Dropdown  overlay={menu} placement="bottomCenter">
-              <span  className="ant-dropdown-link">
+              <span  className="ant-dropdown-link"  onClick={scrollToTop}>
                {data.Header_services} <span className="header-arrow"><RiArrowDropDownLine /></span>
               </span>
             </Dropdown>
-            <Link to="/gallery">{data.Header_gallery}</Link>
-            <Link to="/contact" className="btn">
+            <Link  onClick={scrollToTop} to="/gallery">{data.Header_gallery}</Link>
+            <Link  onClick={scrollToTop} to="/contact" className="btn">
              {data.Header_contact}
             </Link>
           </div>
@@ -75,27 +83,29 @@ function Header(props) {
         </div>
       </div>
       <div className={navopen ? "mob-nav navopen" : "mob-nav "}>
-        <div className="close" onClick={() => setNavOpen(false)}>
+        <div className="close" onClick={() => {setNavOpen(false);setaccordian(false);}}>
           <IoCloseCircleOutline />
         </div>
         <div className="moblinks">
-          <Link to="/" onClick={() => setNavOpen(false)}>
+          <Link to="/" onClick={() => {{setNavOpen(false)};scrollToTop()}}>
            {data.Header_home}
           </Link>
-          <Link to="/about" onClick={() => setNavOpen(false)}>
+          <Link to="/about" onClick={() => {{setNavOpen(false)};scrollToTop()}}>
           {data.Header_about}
           </Link>
 
-          <div className="toprow" onClick={()=>setaccordian(!accordian)}>
+          <div className="toprow" onClick={()=>{setaccordian(!accordian);scrollToTop()}}>
       <Link> {data.Header_services}+</Link>  
     </div>
 
           {accordian &&
     <div className="dropdown-mob">
    
-        <Link to="/data_support" onClick={() => {setNavOpen(false);setaccordian(false)}}>{data.Header_data}</Link>
-        <Link to="/social_media_support"onClick={() => {setNavOpen(false);setaccordian(false)}}>{data. Header_social_media}</Link>
-        <Link to="/election_campaign_support" onClick={() => {setNavOpen(false);setaccordian(false)}}>{data. Header_election_campaign}</Link>
+        <Link to="/data_support" onClick={() => {setNavOpen(false);{setaccordian(false)};scrollToTop()}}>{data.Header_data}</Link>
+
+        <Link to="/social_media_support" onClick={() => {setNavOpen(false);{setaccordian(false)};scrollToTop()}}>{data. Header_social_media}</Link>
+
+        <Link to="/election_campaign_support" onClick={() => {setNavOpen(false);{setaccordian(false)};scrollToTop()}}>{data. Header_election_campaign}</Link>
         
     </div>
 
@@ -106,10 +116,10 @@ function Header(props) {
             {data.Header_services}<span className="header-arrow1"><RiArrowDropDownLine /></span>
             </Link>
           </Dropdown> */}
-          <Link to="/gallery" onClick={() => setNavOpen(false)}>
+          <Link to="/gallery" onClick={() => {{setNavOpen(false)};scrollToTop()}}>
            {data.Header_gallery}
           </Link>
-          <Link to="/contact" onClick={() => setNavOpen(false)}>
+          <Link to="/contact" onClick={() => {{setNavOpen(false)};scrollToTop()}}>
            {data.Header_contact}
           </Link>
         </div>
