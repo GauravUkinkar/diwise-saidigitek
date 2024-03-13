@@ -24,6 +24,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .service1-parent {
     .service1-container {
@@ -137,6 +138,7 @@
     .camp-right {
       width: 50%;
       height: 100%;
+      align-items: center;
 
       .swiper-card1 {
         background-color: var(--white);
@@ -150,7 +152,7 @@
 
         .card-img1 {
           background-image: url("../Img/election-campaign/WAR-ROOM.webp");
-          width: 220px;
+          // width: 220px;
           height: 250px;
           border-radius: 10px;
           background-color: var(--white);
@@ -236,6 +238,11 @@
 
     .camp-left {
       width: 100% !important;
+    }
+    .camp-right{
+      width: 100%!important;
+      align-items: center;
+      justify-content: center;
     }
     .camp-bottom {
       .line-text {

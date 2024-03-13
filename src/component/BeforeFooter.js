@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/beforefooter.scss";
+import {Link} from 'react-router-dom';
 
 function BeforeFooter(props) {
   return (
@@ -11,7 +12,7 @@ function BeforeFooter(props) {
           <h3 className="bfooter-text">
             {props.para1}<br/>{props.para2}
           </h3>
-          <button className="btn">{props.button}</button>
+          <Link to='/contact' className="btn">{props.button}</Link>
         </div>
       </div>
       </>

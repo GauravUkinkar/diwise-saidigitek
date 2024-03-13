@@ -57,11 +57,11 @@ function Gallery(props) {
                       className="mySwiper"
                     >
                       <>
-                        <SwiperSlide className="bg-img-cover swiper-img11"></SwiperSlide>
-                        <SwiperSlide className="bg-img-cover swiper-img12"></SwiperSlide>
-                        <SwiperSlide className="bg-img-cover swiper-img13"></SwiperSlide>
-                        <SwiperSlide className="bg-img-cover swiper-img14"></SwiperSlide>
-                        <SwiperSlide className="bg-img-cover swiper-img15"></SwiperSlide>
+                        <SwiperSlide className="bg-img-contain swiper-img11"></SwiperSlide>
+                        <SwiperSlide className="bg-img-contain swiper-img12"></SwiperSlide>
+                        <SwiperSlide className="bg-img-contain swiper-img13"></SwiperSlide>
+                        <SwiperSlide className="bg-img-contain swiper-img14"></SwiperSlide>
+                        <SwiperSlide className="bg-img-contain swiper-img15"></SwiperSlide>
                       </>
                     </Swiper>
                   </div>
