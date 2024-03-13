@@ -16,7 +16,7 @@
 * {
   box-sizing: border-box;
   // border: 1px solid red;
-  
+  scroll-behavior: smooth !important;
   margin: 0px;
   font-family: 'Poppins', sans-serif;
 }
@@ -28,9 +28,10 @@
 body{
   width: 100%;
   overflow-x: hidden;
+  
 }
 html{
-  scroll-behavior: smooth;
+  
 }
 
 
