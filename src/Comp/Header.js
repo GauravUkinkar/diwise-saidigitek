@@ -6,9 +6,12 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { Menu, Dropdown } from "antd";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import "../styles/accordian.scss"
 
 function Header(props) {
   const [navopen, setNavOpen] = useState(false);
+
+  const [accordian ,setaccordian]=useState(false)
 
   const handleMenuClick = () => {
     setNavOpen(false);
@@ -82,11 +85,27 @@ function Header(props) {
           <Link to="/about" onClick={() => setNavOpen(false)}>
           {data.Header_about}
           </Link>
-          <Dropdown className="header-dropdown" overlay={menu} placement="bottomCenter" >
+
+          <div className="toprow" onClick={()=>setaccordian(!accordian)}>
+      <Link> {data.Header_services}+</Link>  
+    </div>
+
+          {accordian &&
+    <div className="dropdown-mob">
+   
+        <Link to="/data_support" onClick={() => {setNavOpen(false);setaccordian(false)}}>{data.Header_data}</Link>
+        <Link to="/social_media_support"onClick={() => {setNavOpen(false);setaccordian(false)}}>{data. Header_social_media}</Link>
+        <Link to="/election_campaign_support" onClick={() => {setNavOpen(false);setaccordian(false)}}>{data. Header_election_campaign}</Link>
+        
+    </div>
+
+}
+
+          {/* <Dropdown className="header-dropdown" overlay={menu} placement="bottomCenter" >
             <Link className="arrow-mob" >
             {data.Header_services}<span className="header-arrow1"><RiArrowDropDownLine /></span>
             </Link>
-          </Dropdown>
+          </Dropdown> */}
           <Link to="/gallery" onClick={() => setNavOpen(false)}>
            {data.Header_gallery}
           </Link>
