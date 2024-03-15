@@ -45,6 +45,7 @@ function Services(props) {
             btn=""
             secind={data.Election_campaign_secind1}
           >
+             <div className="service-listfour">
             <List
               li1={data.Election_campaign_ul1_li1}
               li2={data.Election_campaign_ul1_li2}
@@ -54,6 +55,7 @@ function Services(props) {
               li6=""
               li7=""
             />
+            </div>
           </TwoColSec>
           <TwoColSec
             bg={booth}
@@ -64,6 +66,7 @@ function Services(props) {
             btn=""
             secind={data.Election_campaign_secind2}
           >
+              <div className="service-listfour">
             <List
               li1={data.Election_campaign_ul2_li1}
               li2={data.Election_campaign_ul2_li2}
@@ -73,6 +76,7 @@ function Services(props) {
               li6=""
               li7=""
             />
+            </div>
           </TwoColSec>
        
 

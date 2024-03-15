@@ -77,7 +77,7 @@ function Service2(props) {
             subdescription={data.Data_analysis_subdescription}
             btn=""
             secind={data.Data_analysis_secind}
-          >
+          > <div className="service-listthree">
             <List
               li1={data.Data_analysis_ul3_li1}
               li2={data.Data_analysis_ul3_li2}
@@ -87,6 +87,7 @@ function Service2(props) {
               li6={data.Data_analysis_ul3_li6}
               li7={data.Data_analysis_ul3_li7}
             />
+            </div>
           </TwoColSec>
           <TwoColSec
             bg={candidate}
@@ -97,6 +98,8 @@ function Service2(props) {
             btn=""
             secind={data.Data_candidate_survey_secind}
           >
+             {/* <div className="service-list2"> */}
+             <div className="service-listfour">
             <List
               li1={data.Data_candidate_survey_ul4_li1}
               li2={data.Data_candidate_survey_ul4_li2}
@@ -106,6 +109,7 @@ function Service2(props) {
               li6=""
               li7=""
             />
+            </div>
           </TwoColSec>
           <TwoColSec
             bg={victory}
@@ -116,6 +120,7 @@ function Service2(props) {
             btn=""
             secind={data.Data_strategy_planning_secind}
           >
+             <div className="service-listfour">
             <List
               li1={data.Data_strategy_planning_ul5_li1}
               li2={data.Data_strategy_planning_ul5_li2}
@@ -126,6 +131,7 @@ function Service2(props) {
               li7={data.Data_strategy_planning_ul5_li7}
               li8={data.Data_strategy_planning_ul5_li8}
             />
+            </div>
           </TwoColSec>
       
 

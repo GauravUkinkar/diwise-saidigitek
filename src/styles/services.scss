@@ -68,17 +68,66 @@
   
     .service-list1{
       width: 100% !important;
+      padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px #0000003d!important;
   
     }
   
     .service-list1{
       width: 100% !important;
-  
+      padding: 20px!important;
+      padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px #0000003d!important;
     }
+
+
+    .service-list2{
+      padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px #0000003d!important;
+    }
+
+    .service-list3 {
+      padding: 20px;
+      background: var(--grey);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #0000003d;
+     
+      }
+      .service-listthree{
+        padding: 20px!important;
+        background: var(--grey)!important;
+        border-radius: 10px!important;
+        
+     
+      }
   }
 
 }
 
+
+@media only screen and (max-width:500px){
+  .service-listthree{
+    padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+    
+ 
+  }
+
+  .service-listfour{
+    padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+  }
+}
 
 
 .camp-parent {

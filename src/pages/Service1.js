@@ -28,6 +28,7 @@ function Service1(props) {
             btn=""
             secind={data.Social_media_secind}
           >
+             <div className="service-listfour">
             <List
               title={data.Social_media_support_ul_title}
               li1={data.Social_media_support_ul_li1}
@@ -38,7 +39,9 @@ function Service1(props) {
               li6={data.Social_media_support_ul_li6}
               li7={data.Social_media_support_ul_li7}
               li8={data.Social_media_support_ul_li8}
+
             />
+            </div>
           </TwoColSec>
 
           {/* card section */}

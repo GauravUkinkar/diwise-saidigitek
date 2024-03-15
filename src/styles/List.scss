@@ -1,22 +1,22 @@
 .lists {
-    color:var(--text);
-    font-size:1rem;
+  color: var(--text);
+  font-size: 1rem;
 
-  .list-container {
-  }
+  .list-container {}
+
   ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    margin-left:-50px;
+    margin-left: -50px;
     align-items: flex-start;
     gap: 10px;
 
-    h2{
+    h2 {
       font-size: 20px;
       color: var(--black);
       text-align: left;
-      
+
     }
 
     li {
@@ -71,6 +71,11 @@
         height: calc(100% - 30px) !important;
         width: calc(100% - 30px) !important;
       }
+
+    
     }
+
+    
+    
   }
 }
