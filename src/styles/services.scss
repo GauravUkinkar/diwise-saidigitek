@@ -127,6 +127,14 @@
     border-radius: 10px!important;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
   }
+
+  .service-listfive{
+
+    padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+  }
 }
 
 
@@ -134,7 +142,7 @@
   background-color: var(--grey);
 
   .camp-container {
-    padding: 20px;
+    padding: 50px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +204,7 @@
         border-radius: 10px;
         padding: 10px;
         gap: var(--gap);
-        width: 100%;
+        width: 80%;
         height: 100%;
 
         .card-img1 {
@@ -292,6 +300,7 @@
   .camp-container {
     flex-direction: column-reverse !important;
     display: flex;
+  
 
     .camp-left {
       width: 100% !important;
@@ -300,6 +309,9 @@
       width: 100%!important;
       align-items: center;
       justify-content: center;
+      padding-bottom: 40px!important;
+      // padding-bottom: 30px 0px!important;
+
     }
     .camp-bottom {
       .line-text {

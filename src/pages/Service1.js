@@ -28,7 +28,7 @@ function Service1(props) {
             btn=""
             secind={data.Social_media_secind}
           >
-             <div className="service-listfour">
+             <div className="service-listfive">
             <List
               title={data.Social_media_support_ul_title}
               li1={data.Social_media_support_ul_li1}

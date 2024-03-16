@@ -27,6 +27,7 @@ function Services(props) {
       <div className="nav-gap"></div>
       <div className="service-parent parent">
         <div className="service-container container">
+          <div className="contain-img">
           <TwoColSec
             bg={be}
             row=""
@@ -36,6 +37,7 @@ function Services(props) {
             btn=""
             secind={data.Election_campaign_secind}
           ></TwoColSec>
+          </div>
           <TwoColSec
             bg={tech}
             row="row-reverse"
