@@ -9,6 +9,7 @@ import analy from "../Img/data-support/Data-Analysis.webp"
 import candidate from "../Img/data-support/choose-the-right-one.webp"
 import victory from "../Img/data-support/PLAN-FOR-VICTORY.webp"
 import because from "../Img/data-support/Because-Knowledge-Is-Power.webp"
+import { Helmet } from 'react-helmet';
 
 
 function Service2(props) {
@@ -19,6 +20,13 @@ function Service2(props) {
          {props.data.map((data) =>{
         return(
 <>
+<Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
     <div>
       <div className="nav-gap" id="service1"></div>
       <div className="service-parent parent">

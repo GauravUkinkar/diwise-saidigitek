@@ -202,3 +202,19 @@
 
     }
 }
+
+
+@media only screen and (max-width:1000px){
+    .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display:block !important;
+    background:var(--accent);
+    padding:12px;
+    color:var(--white);
+    font-size:15px !important;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+  }
+  }

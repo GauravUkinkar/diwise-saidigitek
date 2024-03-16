@@ -8,7 +8,9 @@ import img1 from "../Img/home/VISION.webp"
 import imgmission from "../Img/home/MISSION.webp"
 import card1 from "../Img/home/Data-Support.webp"
 import card2 from "../Img/home/Election-Campaign-Support.webp"
-import card3 from "../Img/home/Social-Media-Support.webp"
+import card3 from "../Img/home/Social-Media-Support.webp";
+import { Helmet } from 'react-helmet';
+
 
 function Home(props) {
   const Data = [
@@ -39,6 +41,14 @@ function Home(props) {
         return(
 
 <>
+
+<Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
       <div className="nav-gap"></div>
       <div className="hero parent">
 

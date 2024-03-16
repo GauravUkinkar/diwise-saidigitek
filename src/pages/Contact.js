@@ -7,6 +7,8 @@ import { notification } from "antd";
 import { FiSmartphone } from "react-icons/fi";
 
 import { AiOutlineMail } from "react-icons/ai";
+import { Helmet } from 'react-helmet';
+
 
 function Contact(props) {
   const [fname, setFname] = useState("");
@@ -44,6 +46,13 @@ setMsg("");
   
   return(
     <>
+    <Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
       <div className="parent contact2">
         <div className="contact2-container cont">
           <div className="contact2-cont-top">

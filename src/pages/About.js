@@ -18,6 +18,8 @@ import card1img from "../Img/about/Innovative-Approach.webp"
 import card2img from "../Img/about/Research-Oriented.webp"
 import card3img from "../Img/about/Commitment-to-Excellence.webp"
 import { useInView } from 'react-intersection-observer';
+import { Helmet } from 'react-helmet';
+
 ;
 function About(props) {
 
@@ -37,6 +39,15 @@ function About(props) {
   return (
 
     <>
+
+    <Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
+
       {props.data.map((data) => {
         return (
 

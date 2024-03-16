@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Helmet } from 'react-helmet';
+
 
 function Gallery(props) {
   return (
@@ -13,6 +15,14 @@ function Gallery(props) {
 
         return (
           <>
+
+         <Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
             <div className="gallery-parent parent">
               <div className="gallery-container cont">
                 <div className="election-section">
