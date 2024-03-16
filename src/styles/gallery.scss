@@ -30,17 +30,15 @@
 
                 .swiper {
                     // padding: 50px;
-                    .swiper-pagination-bullet{
-                        background:var(--accent);
-                        border: 1px solid var(--white);
-                        width:20px;
-                        height:20px;
-                      }
+                    height: 100%;
+                    width: 100%;
+           
+                   
                 }
 
                 .swiper-slide {
                     border-radius: 10px;
-                    margin-bottom:30px;
+          
 
                     &.swiper-img11 {
                         background-image: url('../Img/gallery/s11.jpeg');
@@ -103,6 +101,7 @@
             .swiper-slide {
                 border-radius: 10px;
                 margin-bottom:30px;
+
 
                 &.swiper-img21 {
                     background-image: url('../Img/marketing/s21.jpeg');

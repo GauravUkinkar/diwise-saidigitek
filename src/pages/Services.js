@@ -108,23 +108,23 @@ function Services(props) {
                       </div>
                     </div>
 
-                    <div className="camp-right">
-                      <Swiper
-                        effect={"cards"}
-                        grabCursor={true}
-                        modules={[EffectCards]}
-                        className="mySwiper"
-                      >
-
-                        <SwiperSlide>
-                          <div className="swiper-card1">
-                            <div className="card-img1 cimg1 bg-img-cover"></div>
-                            <div className="card-content">
-                              <h4 className="card-h4">{data.Election_campaign_ul3_li1}</h4>
-                            </div>
-
-                          </div>
-                        </SwiperSlide>
+          <div className="camp-right">
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+            >
+             
+              <SwiperSlide>
+              <div className="swiper-card1">
+                <div className="card-img1 cimg1 bg-img-cover"></div>
+                <div className="card-content">
+                  <h4 className="card-h4">{data.  Election_campaign_ul3_li1}</h4>
+                </div>
+             
+              </div>
+              </SwiperSlide>
 
                         <SwiperSlide>
                           <div className="swiper-card1">
@@ -250,19 +250,19 @@ function Services(props) {
                   </div>
                 </div>
 
-                <BeforeFooter
-                  para1={data.Home_beforefooter_para}
-                  para2={data.Home_beforefooter_para2}
-                  button={data.Home_beforefooter_button}
-                  bg=""
-
-
-                />
-              </div>
-            </div>
-          </>
-        );
-      })}
+      <BeforeFooter
+     para1={data.Home_beforefooter_para}
+     para2={data.Home_beforefooter_para2}
+     button={data.Home_beforefooter_button}
+     bg=""
+     
+     
+     />
+        </div>
+      </div>
+      </>
+              );
+            })}
     </>
   );
 }
