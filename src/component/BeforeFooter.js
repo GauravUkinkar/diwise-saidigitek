@@ -3,6 +3,7 @@ import "../styles/beforefooter.scss";
 import {Link} from 'react-router-dom';
 
 function BeforeFooter(props) {
+  
   return (
     <>
         
