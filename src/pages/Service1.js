@@ -8,6 +8,7 @@ import social from "../Img/social-media/Social-Media-Support.webp"
 import medium from "../Img/social-media/A-medium-to-reach-young-minds.webp"
 import mainstream from "../Img/social-media/mainstream-card3.webp"
 import personal from "../Img/social-media/Creating-personal-connection.webp"
+import { Helmet } from 'react-helmet';
 
 
 
@@ -18,6 +19,13 @@ function Service1(props) {
    return(
 
     <>
+<Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
       <div className="nav-gap"></div>
       <TwoColSec
             bg={social}
@@ -28,6 +36,7 @@ function Service1(props) {
             btn=""
             secind={data.Social_media_secind}
           >
+             <div className="service-listfive">
             <List
               title={data.Social_media_support_ul_title}
               li1={data.Social_media_support_ul_li1}
@@ -38,7 +47,9 @@ function Service1(props) {
               li6={data.Social_media_support_ul_li6}
               li7={data.Social_media_support_ul_li7}
               li8={data.Social_media_support_ul_li8}
+
             />
+            </div>
           </TwoColSec>
 
           {/* card section */}

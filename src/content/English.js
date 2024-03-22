@@ -2,7 +2,7 @@ const english = [
     {   
 
         // home_page=========================
-        Home_slider1:"We don't create a moment of victory, but a movement to win.",
+        Home_slider1:"Together, We Make History.",
         Home_slider2:"Don't just compete; get your voice heard!",
         Home_slider3:"The Taste of Achievement Awaits...",
 

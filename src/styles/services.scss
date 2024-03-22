@@ -24,6 +24,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .service1-parent {
     .service1-container {
@@ -67,24 +68,81 @@
   
     .service-list1{
       width: 100% !important;
+      padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px #0000003d!important;
   
     }
   
     .service-list1{
       width: 100% !important;
-  
+      padding: 20px!important;
+      padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px #0000003d!important;
     }
+
+
+    .service-list2{
+      padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px #0000003d!important;
+    }
+
+    .service-list3 {
+      padding: 20px;
+      background: var(--grey);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #0000003d;
+     
+      }
+      .service-listthree{
+        padding: 20px!important;
+        background: var(--grey)!important;
+        border-radius: 10px!important;
+        
+     
+      }
   }
 
 }
 
+
+@media only screen and (max-width:500px){
+  .service-listthree{
+    padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+    
+ 
+  }
+
+  .service-listfour{
+    padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+  }
+
+  .service-listfive{
+
+    padding: 20px!important;
+    background: white!important;
+    border-radius: 10px!important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+  }
+}
 
 
 .camp-parent {
   background-color: var(--grey);
 
   .camp-container {
-    padding: 20px;
+    padding: 50px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +195,7 @@
     .camp-right {
       width: 50%;
       height: 100%;
+      align-items: center;
 
       .swiper-card1 {
         background-color: var(--white);
@@ -145,13 +204,12 @@
         border-radius: 10px;
         padding: 10px;
         gap: var(--gap);
-        width: 100%;
+        width: 80%;
         height: 100%;
 
         .card-img1 {
           background-image: url("../Img/election-campaign/WAR-ROOM.webp");
-          width: 220px;
-          height: 250px;
+          height: 450px;
           border-radius: 10px;
           background-color: var(--white);
           display: flex;
@@ -192,6 +250,9 @@
           background-image: url("../Img/election-campaign/Loka-Kala.webp");
 
         }
+        @media only screen and (max-width:500px){
+          height:350px !important;
+        }
 
         .card-content {
           display: flex;
@@ -215,12 +276,18 @@
       }
 
       .swiper {
-        width: 240px;
-        height: 320px;
+        width: 80%;
+        height: 500px;
+      }
+      @media only screen and (max-width:500px){
+        .swiper{
+          height:400px !important;
+        }
       }
 
       .swiper-slide {
         display: flex;
+       
         align-items: center;
         justify-content: center;
         border-radius: 10px;
@@ -233,9 +300,18 @@
   .camp-container {
     flex-direction: column-reverse !important;
     display: flex;
+  
 
     .camp-left {
       width: 100% !important;
+    }
+    .camp-right{
+      width: 100%!important;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 40px!important;
+      // padding-bottom: 30px 0px!important;
+
     }
     .camp-bottom {
       .line-text {
@@ -279,7 +355,8 @@
       width: 100%;
       height: 100%;
       .swiper-pagination-bullet{
-        background:var(--white);
+        background:var(--accent);
+        border: 1px solid var(--white);
         width:20px;
         height:20px;
       }
@@ -287,6 +364,7 @@
 
     .swiper-slide {
       text-align: center;
+      margin-bottom: 30px;
       font-size: 18px;
       background: var(--grey);
       display: flex;
@@ -308,9 +386,9 @@
       &.slidess4 {
         background: url("../Img//election-campaign/Banners-Flex-Hoardings.webp");
       }
-      &.slidess5 {
-        background: url("../Img//election-campaign/Banners-Flex-HoardingsS.webp");
-      }
+      // &.slidess5 {
+      //   background: url("../Img//election-campaign/Banners-Flex-HoardingsS.webp");
+      // }
     }
   }
 }

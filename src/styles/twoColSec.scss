@@ -19,10 +19,12 @@
       .img-box {
         width: 90%;
         aspect-ratio: 1;
-        border-radius: var(--rad);
+        border-radius: var(--rad)!important;
+        border-radius: 10px!important;
         // box-shadow: var(--shadow);
         background: rgb(209, 209, 209);
       }
+      
     }
     .sec-right {
       height: 100%;
@@ -58,7 +60,7 @@
         // width: 800px !important;
         background-position: center center !important;
         // background-size: contain !important;
-        border-radius: 10px !important;
+        // border-radius: 10px !important;
 
 
       }
@@ -78,6 +80,7 @@
       .img-box{
         aspect-ratio: 1 !important;
         height: 250px !important;
+       
 
       }
     }
@@ -87,4 +90,7 @@
 
 
 
-
+.abc{
+  background-size: contain !important;
+  // background-color: red!important;
+}

@@ -27,23 +27,23 @@ function Footer(props) {
           <div className="footer-content-box">
             <div className="footer-pages">
               <p>{data.Footer_quick}</p>
-              <Link  to="/"  onClick={scrollToTop}>{data. Footer_home}</Link>
-              <Link  to="/about"  onClick={scrollToTop}>{data. Footer_about}</Link>
-              <Link  to="/gallery"  onClick={scrollToTop}>{data. Footer_gallery}</Link>
-              <Link  to="/contact"  onClick={scrollToTop}>{data. Footer_contact}</Link>
+              <Link  to="/"  >{data. Footer_home}</Link>
+              <Link  to="/about"  >{data. Footer_about}</Link>
+              <Link  to="/gallery"  >{data. Footer_gallery}</Link>
+              <Link  to="/contact"  >{data. Footer_contact}</Link>
               <span className=".span"></span>
             </div>
             <div className="footer-services">
               <p>{data.Footer_services}</p>
-              <Link to="/data_support" onClick={scrollToTop}>{data.Footer_data}</Link>
-              <Link to="/social_media_support" onClick={scrollToTop}>{data.Footer_social_media}</Link>
-              <Link to="/election_campaign_support" onClick={scrollToTop}>{data. Footer_election_campaign}</Link>
+              <Link to="/data_support" >{data.Footer_data}</Link>
+              <Link to="/social_media_support" >{data.Footer_social_media}</Link>
+              <Link to="/election_campaign_support" >{data. Footer_election_campaign}</Link>
               <span className=".span"></span>
             </div>
             <div className="footer-legal">
               <p>{data.Footer_Legal}</p>
-              <Link to="/privacy_policy"  onClick={scrollToTop}>{data.Footer_privacy}</Link>
-              <Link to="/cookies_policy"  onClick={scrollToTop}>{data.Footer_cookies}</Link>
+              <Link to="/privacy_policy"  >{data.Footer_privacy}</Link>
+              <Link to="/cookies_policy"  >{data.Footer_cookies}</Link>
               <span className=".span"></span>
             </div>
 

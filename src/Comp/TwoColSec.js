@@ -9,7 +9,8 @@ function twoColSec(props) {
         <div className="twoColSec-cont cont"  style={{flexDirection:`${props.row}`}}>
 
             <div className="sec-left">
-                <div className="img-box bg-img-cover" style={{background:`url(${props.bg})`}}></div>
+                <div className="img-box box1 bg-img-cover
+                " style={{background:`url(${props.bg})`}}></div>
             </div>
             <div className="sec-right">
                {props.secind && <SecIndicator text={props.secind} />}

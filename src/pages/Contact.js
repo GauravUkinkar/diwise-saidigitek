@@ -7,6 +7,8 @@ import { notification } from "antd";
 import { FiSmartphone } from "react-icons/fi";
 
 import { AiOutlineMail } from "react-icons/ai";
+import { Helmet } from 'react-helmet';
+
 
 function Contact(props) {
   const [fname, setFname] = useState("");
@@ -37,14 +39,45 @@ function Contact(props) {
 
   return (
     <>
-      {props.data.map((data) => {
-        return (
-          <>
-            <div className="parent contact2">
-              <div className="contact2-container cont">
-                <div className="contact2-cont-top">
-                  <h2>{data.Contact_heading}</h2>
-                  <p>{data.Contact_para}</p>
+    {props.data.map((data) =>{
+  
+  return(
+    <>
+    <Helmet>
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about" />
+      </Helmet>
+
+      <div className="parent contact2">
+        <div className="contact2-container cont">
+          <div className="contact2-cont-top">
+            <h2>{data.Contact_heading}</h2>
+            <p>
+             {data.Contact_para}
+            </p>
+          </div>
+          <div className="contact2-cont-bottom">
+            <div className="contact2-cont-bottom-left">
+              <form action="#" onSubmit={onHandleSubmit}>
+                <div className="input-div">
+                  <input
+                    type="text"
+                    placeholder={data.Contact_first_name}
+                    value={fname}
+                    onChange={(e) => {
+                      setFname(e.target.value);
+                    }}
+                  />
+                  <input
+                    type="text"
+                    placeholder={data.Contact_last_name}
+                    value={lname}
+                    onChange={(e) => {
+                      setLname(e.target.value);
+                    }}
+                  />
                 </div>
                 <div className="contact2-cont-bottom">
                   <div className="contact2-cont-bottom-left">

@@ -16,7 +16,7 @@
 * {
   box-sizing: border-box;
   // border: 1px solid red;
-  
+  scroll-behavior: smooth !important;
   margin: 0px;
   font-family: 'Poppins', sans-serif;
 }
@@ -28,9 +28,10 @@
 body{
   width: 100%;
   overflow-x: hidden;
+  
 }
 html{
-  scroll-behavior: smooth;
+  
 }
 
 
@@ -77,11 +78,13 @@ p {
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  border-radius: 10px!important;
 }
 .bg-img-contain {
   background-position: center center !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
+  border-radius: 10px!important;
 }
 
 .parent {
@@ -116,4 +119,27 @@ p {
 
 a{
   text-decoration: none;
+}
+
+
+@media only screen and (max-width:1000px){
+  .swiper-button-prev:after,
+.swiper-button-next:after {
+  display:block !important;
+  background:var(--accent);
+  padding:12px;
+  color:var(--white);
+  font-size:15px !important;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:100%;
+}
+}
+
+.contain-img{
+  .img-box{
+  background-size: contain !important;
+  // background-color: red!important;
+}
 }
